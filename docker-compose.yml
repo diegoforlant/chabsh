@@ -1,0 +1,13 @@
+
+services:
+  app:
+    build: .
+    ports:
+      - 3000
+    volumes:
+      - data:/var/lib/pasarguard
+
+volumes:
+  data:
+    driver_opts:
+      size: 1G
